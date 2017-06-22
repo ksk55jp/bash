@@ -1,0 +1,12 @@
+alias a=alias
+alias cdd="cd /Users/keisuke.kawai/Documents"
+alias cds="cd /Users/keisuke.kawai/Documents/Study"
+alias h="history"
+alias va="vim ~/.alias"
+alias ra=". ~/.alias"
+alias c="clear"
+alias cdruby="cd /Users/keisuke.kawai/Documents/Study/Ruby"
+alias cdp="cd /Users/keisuke.kawai/Documents/Study/prural"
+alias cdts="cd /Users/keisuke.kawai/Documents/Study/Ruby/TsukutteOboeru/ruby_ex"
+alias la="ls -a"
+alias ll="ls -ltr"
