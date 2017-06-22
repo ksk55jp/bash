@@ -4,6 +4,6 @@ profile : to be ~/.profile : resource file for non-login shell
 alias: to be ~/.alias : aliases
 
 
-ln -nfs bashrc ~/.bashrc
-ln -nfs profile ~/.profile
-ln -nfs alias ~/.alias
+ln -nfs bashrc ~/.bashrc;
+ln -nfs profile ~/.profile;
+ln -nfs alias ~/.alias;
