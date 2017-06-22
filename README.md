@@ -16,7 +16,7 @@ mkdir bin
 cd !$
 git clone https://github.com/ksk55jp/bash.git
 cd bash
-ln -nfs bashrc ~/.bashrc
-ln -nfs profile ~/.profile
-ln -nfs alias ~/.alias
+ln -nfs ~/bin/dotfile/bash/bashrc ~/.bashrc
+ln -nfs ~/bin/dotfile/bash/profile ~/.profile
+ln -nfs ~/bin/dotfile/bash/alias ~/.alias
 ```
