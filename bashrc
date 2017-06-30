@@ -1,6 +1,11 @@
 .  ~/.alias
 .  ~/tools/cpnow.bash
-PS1="\h:\w \u \D{%F} \t h>\! c>\# \s \n$ "
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+#export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+PS1="\h:\w \D{%F} \t h>\! c>\# \s \$(parse_git_branch) \n$ "
 ## for setting PS1(bash prompt), refer man bash and search PROMPTING keyword ###
 PATH="/Applications/MacVim.app/Contents/bin:$PATH"
 EDITOR="/Applications/MacVim.app/Contents/bin/vim"
