@@ -2,12 +2,86 @@ alias a=alias
 alias cdd="cd /Users/keisuke.kawai/Documents"
 alias cds="cd /Users/keisuke.kawai/Documents/Study"
 alias h="history"
+alias ho="hostname"
 alias va="vim ~/.alias"
 alias ra=". ~/.alias"
+alias raac=". ~/workspace/alias_achieve"
+alias rax2=". ~/workspace/alias_exam02"
+alias rafb=". ~/workspace/alias_fb"
+alias radic=". ~/workspace/alias_dic"
+alias rat=". ~/workspace/alias_tanada"
+alias vat="vim ~/workspace/alias_tanada"
 alias c="clear"
 alias cdruby="cd /Users/keisuke.kawai/Documents/Study/Ruby"
 alias cdp="cd /Users/keisuke.kawai/Documents/Study/prural"
 alias cdts="cd /Users/keisuke.kawai/Documents/Study/Ruby/TsukutteOboeru/ruby_ex"
 alias la="ls -a"
-alias ll="ls -ltr"
-alias lla="ls -ltra"
+alias ll="ls -lFtr"
+alias lla="ls -lFtra"
+## Aliases releated to MEMO in DIC quote
+alias cdmemo="cd /Users/keisuke.kawai/Documents/Study/Diver/memo_files"
+alias MEMO="vim ~/memo.txt"
+#alias MEMO="vim ~/Documents/Study/ansible/ansible_tutorial/memo.txt"
+alias MEMORE="more ~/memo.txt"
+alias MEMOCAT="cat  ~/memo.txt"
+alias MEMOTAIL="tail ~/memo.txt"
+#alias TODO="MEMOCAT | grep TODO | egrep -v \":$\" | more"
+alias HOW="MEMOCAT | grep HOWTO | more"
+## Aliases releated to MEMO in DIC unquote
+## Aliases related to PostgreSQL
+alias dbst="brew services list postgresql"
+alias dbup="pg_ctl -D /usr/local/var/postgres -l logfile start"
+alias dbdn="pg_ctl -D /usr/local/var/postgres -l logfile stop"
+#alias dbdn="brew services stop postgresql"
+#alias dbbnc="brew services restart postgresql"
+alias dbbnc="pg_ctl -D /usr/local/var/postgres -l logfile restart"
+## Aliases for Achieve(DIC)
+alias cda="cd /Users/keisuke.kawai/workspace/achieve"
+alias cdconf="cd /Users/keisuke.kawai/workspace/achieve/config"
+alias cdas="cd /Users/keisuke.kawai/workspace/achieve/app/assets"
+alias cdcss="cd /Users/keisuke.kawai/workspace/achieve/app/assets/stylesheets"
+alias cdcont="cd /Users/keisuke.kawai/workspace/achieve/app/controllers"
+alias cdh="cd /Users/keisuke.kawai/workspace/achieve/app/helpers"
+alias cdenv="cd /Users/keisuke.kawai/workspace/achieve/config/environments"
+alias cdini="cd /Users/keisuke.kawai/workspace/achieve/config/initializers"
+alias cdvw="cd /Users/keisuke.kawai/workspace/achieve/app/views"
+alias cdmod="cd /Users/keisuke.kawai/workspace/achieve/app/models"
+alias cdml="cd /Users/keisuke.kawai/workspace/achieve/app/mailers"
+alias cddb="cd /Users/keisuke.kawai/workspace/achieve/db"
+alias cdmig="cd /Users/keisuke.kawai/workspace/achieve/db/migrate"
+alias rb="rbenv global 2.3.0"
+
+# alias cdd="cd /var/tmp/day13"
+# alias cdconf="cd /var/tmp/day13/config"
+# alias cdcont="cd /var/tmp/day13/app/controllers"
+# alias cdenv="cd /var/tmp/day13/config/environments"
+# alias cdini="cd /var/tmp/day13/config/initializers"
+# alias cdvw="cd /var/tmp/day13/app/views"
+# alias cdmod="cd /var/tmp/day13/app/models"
+# alias cdml="cd /var/tmp/day13/app/mailers"
+# alias cddb="cd /var/tmp/day13/db"
+# alias cdmig="cd /var/tmp/day13/db/migrate"
+
+alias rb="rbenv global 2.3.0"
+
+## Web server startup
+alias wsup="rails s"
+alias cdw="cd ~/workspace"
+
+## EC2
+alias ec2in="ssh app@13.112.73.168"
+
+# Ansible Tutorial
+alias cdantu="cd ~/Documents/Study/ansible/ansible_tutorial"
+echo "[DEBUG] end of .alias"
+
+
+## Bundle exec prefix (Advised by Saito san)
+alias rails="bundle exec rails"
+alias rake="bundle exec rake"
+
+
+### CGI Study
+alias cdc="cd /Users/keisuke.kawai/Sites"
+alias cdcd="cd ~/Documents/Perl/CGI10days"
+alias error="cat /private/var/log/apache2/error_log"

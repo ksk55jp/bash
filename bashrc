@@ -1,5 +1,6 @@
 .  ~/.alias
 .  ~/tools/cpnow.bash
+.  ~/tools/gre.bash
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
@@ -8,4 +9,17 @@ parse_git_branch() {
 PS1="\h:\w \D{%F} \t h>\! c>\# \s \$(parse_git_branch) \n$ "
 ## for setting PS1(bash prompt), refer man bash and search PROMPTING keyword ###
 PATH="/Applications/MacVim.app/Contents/bin:$PATH"
+PATH="/usr/local/mysql/bin:$PATH"
 EDITOR="/Applications/MacVim.app/Contents/bin/vim"
+
+
+## Git completion
+#. /usr/local/etc/bash_completion.d/git-completion.bash
+## Rails installation
+export PATH="$HOME/.rbenv/shims:$PATH"
+## Python installation
+#export PATH=/Library/Frameworks/Python.framework/Versions/3.X/bin:$PATH
+
+echo "[DEBUG] end of .bashrc"
+export PATH="$HOME/.anyenv/bin:$PATH"
+source ~/.git-completion.bash
